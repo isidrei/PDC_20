@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<form name="myForm" onsubmit="return(validate());">
+    <div class="row">
+        <label>Employee ID</label>
+        <input type="number" name="employeeID" /> <br>
+        <div class="error" id="employeeIDErr"></div>
+
+    <div class="row">
+        <label>First Name</label>
+        <input type="text" name="firstname" /> <br>
+        <div class="error" id="firstnameErr"></div>
+</div>
+
+<div class="row">
+    <label> Last Name</label>
+    <input type="text" name="lastname" /> <br>
+    <div class="error" id="lastnameErr"></div>
+    </div>
+
+<div ng-app="">
+<label> Address</label>
+<input type="text" name="address" ng-model="address" required/> <br>
+</div>
+
+<div class="row">
+    <label> Department </label>
+    <input type="text" name="department" /> <br>
+    <div class="error" id="departmentErr"></div>
+    </div>
+
+    <div class="row">
+        <label> Position </label>
+        <select id="position" name="position" required>
+          <option value="Employee">Employee</option>
+          <option value="Manager>">Manager</option>
+          <option value="Admin">Admin</option>
+          <option value="Head">Head</option>
+        </select> <br>
+        </div>
+
+<div class="row">
+    <label> Email Address</label>
+    <input type="text" name="email"/> <br>
+    <div class="error" id="emailErr"></div>
+</div>
+
+<div class="row">
+    <label> Contact Number</label>
+    <input type="number" name="contact"/> <br>
+    <div class="error" id="contactErr"></div>
+</div>
+
+<div class="row">
+    <label> Salary </label>
+    <select id="salary" name="salary" required>
+      <option value="$5000 - $10000">$5000 - $10000</option>
+      <option value="$10000 - $20000">$10000 - $20000</option>
+      <option value="$20000 - $30000">$20000 - $30000</option>
+      <option value="$30000 or up">$30000 or up </option>
+    </select> <br>
+    </div>
+    
+<div class="row">
+    <label> Username</label>
+    <input type="text" name="username"/> <br>
+    <div class="error" id="usernameErr"></div>
+</div>
+
+
+    <input type="submit" value="Submit"/>
+    <script type="text/javascript" src="exercisevalid.js"></script>
+
+
+</form>
+
+
+</body>
+
+</html>
